@@ -1,0 +1,50 @@
+body{
+    background-image: url("/img/mainBackground.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    max-width: 100%;
+    height: auto;
+}
+#container{
+    display: flex;
+    flex-direction: row;
+    height:94vh;
+    align-items: center;
+    margin-left: 2%;
+}
+li{
+    list-style-type: none;
+    flex-grow: 1;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+#goGame{
+    max-width: 100%;
+    width: 25vh;
+    margin-top: 45vh;
+}
+#goBoots{
+    max-width: 100%;
+    width: 25vh;
+    margin-top: 0vh;
+}
+#goPlayers{
+    max-width: 100%;
+    width: 35vh;
+    margin-top: 0vh;
+}
+#goGame, #goBoots, #goPlayers{
+    transition: 0.3s;
+}
+#goGame:hover, #goBoots:hover, #goPlayers:hover{
+    transform: scale(0.9);
+}
+p{
+    font-family: "verdana";
+    font-weight: bold;
+    font-size: 3vh;
+    user-select: none;
+}
