@@ -1,3 +1,3 @@
 # clickerGame
 
-<a href="http://127.0.0.1:5500/main.html">Spustit</a>
+[I'm a relative reference to a repository file](../clickerGame/main.html)
