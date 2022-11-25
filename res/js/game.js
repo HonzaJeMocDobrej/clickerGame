@@ -62,25 +62,25 @@ cookie.onclick = () => {
   localStorage.setItem("countGoals", countGoals);
 };
 if (players1Up == 1) {
-  cookie.style.backgroundImage = "url('/img/Fandic.png')";
+  cookie.style.backgroundImage = "url('../res/img/Fandic.png')";
   cookieContainer.style.height = "50%";
   cookieContainer.style.width = "50%";
   cookieContainer.style.marginTop = "-30%";
 }
 if (players1Up == 2) {
-  cookie.style.backgroundImage = "url('/img/honzaKotakto.png')";
+  cookie.style.backgroundImage = "url('../img/honzaKotakto.png')";
   cookieContainer.style.height = "60%";
   cookieContainer.style.width = "60%";
   cookieContainer.style.marginTop = "-40%";
 }
 if (players1Up == 3) {
-  cookie.style.backgroundImage = "url('/img/majklJira.png')";
+  cookie.style.backgroundImage = "url('../img/majklJira.png')";
   cookieContainer.style.height = "60%";
   cookieContainer.style.width = "60%";
   cookieContainer.style.marginTop = "-42%";
 }
 if (players1Up == 4) {
-  cookie.style.backgroundImage = "url('/img/Vojtacek.png')";
+  cookie.style.backgroundImage = "url('../img/Vojtacek.png')";
   cookieContainer.style.height = "50%";
   cookieContainer.style.width = "50%";
   cookieContainer.style.marginTop = "-30%";
