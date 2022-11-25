@@ -3,7 +3,7 @@ body, html{
     margin: 0;
 }
 #bg{
-    background-image: url("/img/redBrickWall.png");
+    background-image: url("../img/redBrickWall.png");
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -29,7 +29,7 @@ body, html{
 }
 
 #shelf{
-    background-image: url(/img/shelf.png);
+    background-image: url("../img/shelf.png");
     height: 10%;
     margin-top: 15%;
     width: 30%;
