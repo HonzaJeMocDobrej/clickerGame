@@ -1,6 +1,7 @@
 body, html{
     height: 100%;
     margin: 0;
+    font-family: "verdana";
 }
 body p{
     user-select: none;
@@ -94,4 +95,74 @@ body p{
 }
 #cookie:hover{
     transform: scale(0.9);
+}
+#tableContainer{
+    /* position: absolute; */
+    /* bottom: 30%; */
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: -30%;
+}
+#table{
+    background-color: aqua;
+    width: 10%;
+    height: 20vw;
+    display: flex;
+    flex-direction: column;
+    border: solid black .33vw;
+}
+#tableText{
+    background-color: rgb(136, 126, 126);
+    flex: 3;
+    border-bottom: solid black .33vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+    user-select: none;
+}
+#tableText:hover{
+    background-color: rgb(119, 184, 240);
+}
+#tableText p{
+    font-weight: bold;
+    font-size: .9vw;
+}
+#table1Container{
+    background-color: rgb(136, 126, 126);
+    flex: 7;
+    border-bottom: solid black .165vw;
+    transition: .3s;
+    user-select: none;
+}
+#table1Container:hover{
+    background-color: rgb(62, 138, 204);
+}
+#table1Img{
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/foot.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#table2Container{
+    background-color: rgb(136, 126, 126);
+    flex: 7;
+    border-top: solid black .165vw;
+    transition: .3s;
+    user-select: none;
+}
+#table2Container:hover{
+    background-color: rgb(28, 88, 140);
+}
+#table2Img{
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/football.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }

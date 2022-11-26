@@ -19,13 +19,16 @@ const goals = document.getElementById("goals");
 goals.innerHTML = `Góly : ${countGoals}`;
 
 boots1.onclick = () => {
-  if (countGoals >= 3) {
-    boots1Up++;
+  if (countGoals >= 3 && boots1Up == 0) {
+    boots1Up = 1;
   countGoals -= 3;
   console.log("Banger");
   if (boots1Up >= 1) {
     boots1.style.display = "none";
     countUp = 1; 
+  }
+  else if (boots1Up != 1) {
+    countGoals -= 0;
   }
   }
   localStorage.setItem("boots1Up", boots1Up);
@@ -35,13 +38,16 @@ boots1.onclick = () => {
 
 }
 boots2.onclick = () => {
-  if (countGoals >= 7) {
-    boots1Up++;
+  if (countGoals >= 7 && boots1Up == 1) {
+    boots1Up = 2;
   countGoals -= 7;
   console.log("Banger2");
   if (boots1Up >= 2) {
     boots2.style.display = "none";
     countUp = 2; 
+  }
+  else if (boots1Up != 2) {
+    countGoals -= 0;
   }
   }
   localStorage.setItem("boots1Up", boots1Up);
@@ -50,13 +56,16 @@ boots2.onclick = () => {
   goals.innerHTML = `Góly : ${countGoals}`;
 }
 boots3.onclick = () => {
-  if (countGoals >= 16) {
-    boots1Up++;
+  if (countGoals >= 16 && boots1Up == 2) {
+    boots1Up = 3;
   countGoals -= 16;
   console.log("Banger3");
   if (boots1Up >= 3) {
     boots3.style.display = "none";
     countUp = 3; 
+  }
+  else if (boots1Up != 3) {
+    countGoals -= 0;
   }
   }
   localStorage.setItem("boots1Up", boots1Up);
@@ -65,13 +74,16 @@ boots3.onclick = () => {
   goals.innerHTML = `Góly : ${countGoals}`;
 }
 boots4.onclick = () => {
-  if (countGoals >= 30) {
-    boots1Up++;
+  if (countGoals >= 30 && boots1Up == 3) {
+    boots1Up = 4;
   countGoals -= 30;
   console.log("Banger4");
   if (boots1Up >= 4) {
     boots4.style.display = "none";
     countUp = 4; 
+  }
+  else if (boots1Up != 4) {
+    countGoals -= 0;
   }
   }
   localStorage.setItem("boots1Up", boots1Up);
@@ -80,13 +92,16 @@ boots4.onclick = () => {
   goals.innerHTML = `Góly : ${countGoals}`;
 }
 boots5.onclick = () => {
-  if (countGoals >= 75) {
-    boots1Up++;
+  if (countGoals >= 75 && boots1Up == 4) {
+    boots1Up = 5;
   countGoals -= 75;
   console.log("Banger5");
   if (boots1Up >= 5) {
     boots5.style.display = "none";
     countUp = 5; 
+  }
+  else if (boots1Up != 5) {
+    countGoals -= 0;
   }
   }
   localStorage.setItem("boots1Up", boots1Up);
@@ -95,13 +110,16 @@ boots5.onclick = () => {
   goals.innerHTML = `Góly : ${countGoals}`;
 }
 boots6.onclick = () => {
-  if (countGoals >= 300) {
-    boots1Up++;
+  if (countGoals >= 300 && boots1Up == 5) {
+    boots1Up = 6;
   countGoals -= 300;
   console.log("Banger6");
   if (boots1Up >= 6) {
     boots6.style.display = "none";
     countUp = 6; 
+  }
+  else if (boots1Up != 6) {
+    countGoals -= 0;
   }
   }
   localStorage.setItem("boots1Up", boots1Up);
