@@ -96,7 +96,7 @@ player3.onclick = () => {
     }
     else if (playersEquip1Up>=3) {
         countGoals-=0;
-        // players1Up = 3;
+        players1Up = 3;
         if (players1Up == 3) {        
             console.log("Fandak");
             localStorage.setItem("players1Up", players1Up);
