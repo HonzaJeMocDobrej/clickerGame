@@ -1,7 +1,9 @@
 let players1Up = parseInt(localStorage.getItem("players1Up")) || 0;
+let playersEquip1Up = parseInt(localStorage.getItem("playersEquip1Up")) || 0;
 let countGoals = parseInt(localStorage.getItem("countGoals"));
 
 localStorage.setItem("players1Up", players1Up);
+localStorage.setItem("playersEquip1Up", playersEquip1Up);
 localStorage.setItem("countGoals", countGoals);
 
 const player1 = document.getElementById("player1");
@@ -12,48 +14,132 @@ const player4 = document.getElementById("player4");
 goals.innerHTML = `Góly : ${countGoals}`;
 
 player1.onclick = () => {
+    if (countGoals >= 50 && players1Up == 0 && playersEquip1Up == 0) {
+    countGoals-=50;    
     players1Up = 1;
+    playersEquip1Up = 1;
     if (players1Up == 1) {        
-        console.log("Fandak");
+        console.log("Vojtak");
         localStorage.setItem("players1Up", players1Up);
         player1.style.display = "none";
     }
     player2.style.display = "block";
     player3.style.display = "block";
     player4.style.display = "block";
+    localStorage.setItem("countGoals", countGoals);
+    localStorage.setItem("playersEquip1Up", playersEquip1Up);
+    goals.innerHTML = `Góly : ${countGoals}`;
+}
+else if (playersEquip1Up>=1) {
+    countGoals-=0;    
+    players1Up = 1;
+    if (players1Up == 1) {        
+        console.log("Vojtak");
+        localStorage.setItem("players1Up", players1Up);
+        player1.style.display = "none";
+    }
+    player2.style.display = "block";
+    player3.style.display = "block";
+    player4.style.display = "block";
+    localStorage.setItem("countGoals", countGoals);
+    goals.innerHTML = `Góly : ${countGoals}`;
+}
 }
 player2.onclick = () => {
-    players1Up = 2;
-    if (players1Up == 2) {        
-        console.log("Honzicek");
-        localStorage.setItem("players1Up", players1Up);
-        player2.style.display = "none";
+    if (countGoals >= 100 && players1Up == 1 && playersEquip1Up == 1) {
+        countGoals-=100;
+        players1Up = 2;
+        playersEquip1Up = 2;
+        if (players1Up == 2) {        
+            console.log("Majkl");
+            localStorage.setItem("players1Up", players1Up);
+            player2.style.display = "none";
+        }
+        player1.style.display = "block";
+        player3.style.display = "block";
+        player4.style.display = "block";
+        localStorage.setItem("countGoals", countGoals);
+        localStorage.setItem("playersEquip1Up", playersEquip1Up);
+        goals.innerHTML = `Góly : ${countGoals}`;
     }
-    player1.style.display = "block";
-    player3.style.display = "block";
-    player4.style.display = "block";
+    else if (playersEquip1Up>=2) {
+        countGoals-=0;
+        players1Up = 2;
+        if (players1Up == 2) {        
+            console.log("Majkl");
+            localStorage.setItem("players1Up", players1Up);
+            player2.style.display = "none";
+        }
+        player1.style.display = "block";
+        player3.style.display = "block";
+        player4.style.display = "block";
+        localStorage.setItem("countGoals", countGoals);
+        goals.innerHTML = `Góly : ${countGoals}`;
+    }
 }
 player3.onclick = () => {
-    players1Up = 3;
-    if (players1Up == 3) {        
-        console.log("Majkl");
-        localStorage.setItem("players1Up", players1Up);
-        player3.style.display = "none";
+    if (countGoals >= 250 && players1Up == 2 && playersEquip1Up == 2) {
+        countGoals-=250;
+        players1Up = 3;
+        playersEquip1Up = 3;
+        if (players1Up == 3) {        
+            console.log("Fandak");
+            localStorage.setItem("players1Up", players1Up);
+            player3.style.display = "none";
+        }
+        player1.style.display = "block";
+        player2.style.display = "block";
+        player4.style.display = "block";
+        localStorage.setItem("countGoals", countGoals);
+        localStorage.setItem("playersEquip1Up", playersEquip1Up);
+        goals.innerHTML = `Góly : ${countGoals}`;
     }
-    player1.style.display = "block";
-    player2.style.display = "block";
-    player4.style.display = "block";
+    else if (playersEquip1Up>=3) {
+        countGoals-=0;
+        // players1Up = 3;
+        if (players1Up == 3) {        
+            console.log("Fandak");
+            localStorage.setItem("players1Up", players1Up);
+            player3.style.display = "none";
+        }
+        player1.style.display = "block";
+        player2.style.display = "block";
+        player4.style.display = "block";
+        localStorage.setItem("countGoals", countGoals);
+        goals.innerHTML = `Góly : ${countGoals}`;
+    }
 }
 player4.onclick = () => {
-    players1Up = 4;
-    if (players1Up == 4) {        
-        console.log("Vojtacek");
-        localStorage.setItem("players1Up", players1Up);
-        player4.style.display = "none";
+    if (countGoals >= 500 && players1Up == 3 && playersEquip1Up == 3) {
+        countGoals-=500;
+        players1Up = 4;
+        playersEquip1Up = 4;
+        if (players1Up == 4) {        
+            console.log("Honzicek");
+            localStorage.setItem("players1Up", players1Up);
+            player4.style.display = "none";
+        }
+        player1.style.display = "block";
+        player2.style.display = "block";
+        player3.style.display = "block";
+        localStorage.setItem("countGoals", countGoals);
+        localStorage.setItem("playersEquip1Up", playersEquip1Up);
+        goals.innerHTML = `Góly : ${countGoals}`;
     }
-    player1.style.display = "block";
-    player2.style.display = "block";
-    player3.style.display = "block";
+    else if (playersEquip1Up>=4) {
+        countGoals-=0;
+        players1Up = 4;
+        if (players1Up == 4) {        
+            console.log("Fandak");
+            localStorage.setItem("players1Up", players1Up);
+            player4.style.display = "none";
+        }
+        player1.style.display = "block";
+        player2.style.display = "block";
+        player3.style.display = "block";
+        localStorage.setItem("countGoals", countGoals);
+        goals.innerHTML = `Góly : ${countGoals}`;
+    }
 }
 window.onload = () => {
     if (players1Up == 1) {

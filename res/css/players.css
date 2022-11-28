@@ -15,7 +15,7 @@ body, html{
 #flexContainer{
     width: 80%;
     height: 50%;
-    background-color: brown;
+    /* background-color: brown; */
     display: flex;
     align-items: flex-end;
 }
@@ -24,21 +24,21 @@ body, html{
     flex-grow: 1;
 }
 #playderDiv1{
-    background-color: aqua;
+    /* background-color: aqua; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 #playderDiv2{
-    background-color: green;
+    /* background-color: green; */
     display: flex;
 }
 #playderDiv3{
-    background-color: yellow;
+    /* background-color: yellow; */
     display: flex;
 }
 #playderDiv4{
-    background-color: red;
+    /* background-color: red; */
     display: flex;
 }
 .player{
@@ -48,25 +48,9 @@ body, html{
     height: 100%;
     width: 100%;
 }
-#player1{  
-    cursor: pointer;
-    background-image: url("../img/Fandic.png");
-    transition: .3s;
-}
-#player1:hover{
-    transform: scale(1.1);
-}
-#player2{  
-    cursor: pointer;
-    background-image: url("../img/honzaKotakto.png");
-    transition: .3s;
-}
-#player2:hover{
-    transform: scale(1.1);
-}
 #player3{  
     cursor: pointer;
-    background-image: url("../img/majklJira.png");
+    background-image: url("../img/Fandic.png");
     transition: .3s;
 }
 #player3:hover{
@@ -74,10 +58,26 @@ body, html{
 }
 #player4{  
     cursor: pointer;
-    background-image: url("../img/Vojtacek.png");
+    background-image: url("../img/honzaKotakto.png");
     transition: .3s;
 }
 #player4:hover{
+    transform: scale(1.1);
+}
+#player2{  
+    cursor: pointer;
+    background-image: url("../img/majklJira.png");
+    transition: .3s;
+}
+#player2:hover{
+    transform: scale(1.1);
+}
+#player1{  
+    cursor: pointer;
+    background-image: url("../img/Vojtacek.png");
+    transition: .3s;
+}
+#player1:hover{
     transform: scale(1.1);
 }
 #backArrow{

@@ -97,8 +97,6 @@ body p{
     transform: scale(0.9);
 }
 #tableContainer{
-    /* position: absolute; */
-    /* bottom: 30%; */
     width: 100%;
     display: flex;
     justify-content: flex-end;
@@ -106,7 +104,8 @@ body p{
     margin-top: -30%;
 }
 #table{
-    background-color: aqua;
+    /* background-color: aqua; */
+    box-sizing: border-box;
     width: 10%;
     height: 20vw;
     display: flex;

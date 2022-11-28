@@ -49,11 +49,41 @@ cookie.onclick = () => {
   }
   counter1.innerHTML = count;
   if (count >= 90.1) {
-    let random = Math.floor(Math.random(0) * 3);
-    count = 0;
-    countGoals = countGoals + random;
-    counter2.innerHTML = countGoals;
-    counter1.innerHTML = count;
+    if (players1Up == 0) {
+      let random = Math.floor(Math.random(0) * 3);
+      count = 0;
+      countGoals = countGoals + random;
+      counter2.innerHTML = countGoals;
+      counter1.innerHTML = count;
+    }
+    if (players1Up == 1) {
+      let random = Math.floor(Math.random(0) * 5);
+      count = 0;
+      countGoals = countGoals + random;
+      counter2.innerHTML = countGoals;
+      counter1.innerHTML = count;
+    }
+    if (players1Up == 2) {
+      let random = Math.floor(Math.random(0) * 7);
+      count = 0;
+      countGoals = countGoals + random;
+      counter2.innerHTML = countGoals;
+      counter1.innerHTML = count;
+    }
+    if (players1Up == 3) {
+      let random = Math.floor(Math.random() * (10-1) + 1);
+      count = 0;
+      countGoals = countGoals + random;
+      counter2.innerHTML = countGoals;
+      counter1.innerHTML = count;
+    }
+    if (players1Up == 4) {
+      let random = Math.floor(Math.random() * (20-3) + 3);
+      count = 0;
+      countGoals = countGoals + random;
+      counter2.innerHTML = countGoals;
+      counter1.innerHTML = count;
+    }
   }
 
   
@@ -83,28 +113,28 @@ cookie.onclick = () => {
 //     table2Container.style.backgroundColor = "rgb(136, 126, 126)";
 //   }
 // }
-if (players1Up == 1) {
+if (players1Up == 3) {
   cookie.style.backgroundImage = "url('../../res/img/Fandic.png')";
   table2Img.style.backgroundImage = "url('../../res/img/Fandic.png')";
   cookieContainer.style.height = "50%";
   cookieContainer.style.width = "50%";
   cookieContainer.style.marginTop = "-30%";
 }
-if (players1Up == 2) {
+if (players1Up == 4) {
   cookie.style.backgroundImage = "url('../../res/img/honzaKotakto.png')";
   table2Img.style.backgroundImage = "url('../../res/img/honzaKotakto.png')";
   cookieContainer.style.height = "60%";
   cookieContainer.style.width = "60%";
   cookieContainer.style.marginTop = "-40%";
 }
-if (players1Up == 3) {
+if (players1Up == 2) {
   cookie.style.backgroundImage = "url('../../res/img/majklJira.png')";
   table2Img.style.backgroundImage = "url('../../res/img/majklJira.png')";
   cookieContainer.style.height = "60%";
   cookieContainer.style.width = "60%";
   cookieContainer.style.marginTop = "-42%";
 }
-if (players1Up == 4) {
+if (players1Up == 1) {
   cookie.style.backgroundImage = "url('../../res/img/Vojtacek.png')";
   table2Img.style.backgroundImage = "url('../../res/img/Vojtacek.png')";
   cookieContainer.style.height = "50%";
