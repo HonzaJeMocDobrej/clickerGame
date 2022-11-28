@@ -78,7 +78,7 @@ cookie.onclick = () => {
       counter1.innerHTML = count;
     }
     if (players1Up == 4) {
-      let random = Math.floor(Math.random() * (20-3) + 3);
+      let random = Math.floor(Math.random() * (21-3) + 3);
       count = 0;
       countGoals = countGoals + random;
       counter2.innerHTML = countGoals;

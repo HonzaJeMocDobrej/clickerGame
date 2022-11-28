@@ -9,15 +9,45 @@ body, html{
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 #flexContainer{
+    margin-top: 10%;
     width: 80%;
     height: 50%;
     /* background-color: brown; */
     display: flex;
     align-items: flex-end;
+}
+#signsConatiner{
+    width: 80%;
+    height: 28%;
+    /* background-color: darkmagenta; */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    flex-flow: wrap;
+}
+.signsWrap{
+    height: 100%;
+    flex: 1;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#signsWrap1{
+    background-image: url(../img/signPlayers1.png);
+}
+#signsWrap2{
+    background-image: url(../img/signPlayers2.png);
+}
+#signsWrap3{
+    background-image: url(../img/signPlayers3.png);
+}
+#signsWrap4{
+    background-image: url(../img/signPlayers4.png);
 }
 .playerDiv{
     height: 100%;
@@ -93,7 +123,7 @@ body, html{
 }
 #goals{
     position: absolute;
-    top: 10%;
+    top: 5%;
     color: #26262a;
     font-size: 2.5vw;
     text-align: center;
