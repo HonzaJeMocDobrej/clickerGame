@@ -114,48 +114,48 @@ cookie.onclick = () => {
 //   }
 // }
 if (players1Up == 3) {
-  cookie.style.backgroundImage = "url('../../res/img/Fandic.png')";
-  table2Img.style.backgroundImage = "url('../../res/img/Fandic.png')";
+  cookie.style.backgroundImage = "url('./res/img/Fandic.png')";
+  table2Img.style.backgroundImage = "url('./res/img/Fandic.png')";
   cookieContainer.style.height = "50%";
   cookieContainer.style.width = "50%";
   cookieContainer.style.marginTop = "-30%";
 }
 if (players1Up == 4) {
-  cookie.style.backgroundImage = "url('../../res/img/honzaKotakto.png')";
-  table2Img.style.backgroundImage = "url('../../res/img/honzaKotakto.png')";
+  cookie.style.backgroundImage = "url('./res/img/honzaKotakto.png')";
+  table2Img.style.backgroundImage = "url('./res/img/honzaKotakto.png')";
   cookieContainer.style.height = "60%";
   cookieContainer.style.width = "60%";
   cookieContainer.style.marginTop = "-40%";
 }
 if (players1Up == 2) {
-  cookie.style.backgroundImage = "url('../../res/img/majklJira.png')";
-  table2Img.style.backgroundImage = "url('../../res/img/majklJira.png')";
+  cookie.style.backgroundImage = "url('./res/img/majklJira.png')";
+  table2Img.style.backgroundImage = "url('./res/img/majklJira.png')";
   cookieContainer.style.height = "60%";
   cookieContainer.style.width = "60%";
   cookieContainer.style.marginTop = "-42%";
 }
 if (players1Up == 1) {
-  cookie.style.backgroundImage = "url('../../res/img/Vojtacek.png')";
-  table2Img.style.backgroundImage = "url('../../res/img/Vojtacek.png')";
+  cookie.style.backgroundImage = "url('./res/img/Vojtacek.png')";
+  table2Img.style.backgroundImage = "url('./res/img/Vojtacek.png')";
   cookieContainer.style.height = "50%";
   cookieContainer.style.width = "50%";
   cookieContainer.style.marginTop = "-30%";
 }
 if (boots1Up == 1) {
-  table1Img.style.backgroundImage = "url('../../res/img/boots1.png')"
+  table1Img.style.backgroundImage = "url('./res/img/boots1.png')"
 }
 if (boots1Up == 2) {
-  table1Img.style.backgroundImage = "url('../../res/img/boots2.png')"
+  table1Img.style.backgroundImage = "url('./res/img/boots2.png')"
 }
 if (boots1Up == 3) {
-  table1Img.style.backgroundImage = "url('../../res/img/boots3.png')"
+  table1Img.style.backgroundImage = "url('./res/img/boots3.png')"
 }
 if (boots1Up == 4) {
-  table1Img.style.backgroundImage = "url('../../res/img/boots4.png')"
+  table1Img.style.backgroundImage = "url('./res/img/boots4.png')"
 }
 if (boots1Up == 5) {
-  table1Img.style.backgroundImage = "url('../../res/img/boots5.png')"
+  table1Img.style.backgroundImage = "url('./res/img/boots5.png')"
 }
 if (boots1Up == 6) {
-  table1Img.style.backgroundImage = "url('../../res/img/boots6.png')"
+  table1Img.style.backgroundImage = "url('./res/img/boots6.png')"
 }
