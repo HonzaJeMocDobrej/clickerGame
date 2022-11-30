@@ -165,3 +165,12 @@ body p{
     background-repeat: no-repeat;
     background-size: contain;
 }
+#popUp{
+    position: absolute;
+    font-size: 1rem;
+    left: 5%;
+    bottom: 50%;
+    font-weight: bold;
+    user-select: none;
+    /* display: none; */
+}

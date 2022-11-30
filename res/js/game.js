@@ -20,6 +20,7 @@ const table2Img = document.getElementById("table2Img");
 const tableText = document.getElementById("tableText");
 const table1Container = document.getElementById("table1Container");
 const table2Container = document.getElementById("table2Container");
+const popUp = document.getElementById("popUp");
 
 counter1.innerHTML = count
 counter2.innerHTML = countGoals
@@ -52,6 +53,28 @@ cookie.onclick = () => {
     if (players1Up == 0) {
       let random = Math.floor(Math.random(0) * 3);
       count = 0;
+      // if (random == 0) {
+      //   popUp.style.display = "block";
+      //   constPInterval = setTimeout(() => {
+        //     popUp.style.display = "none";
+        //   }, 1000);
+        // }
+        popUp.style.display = "block";
+        if (random == 0) {
+                    popUp.innerHTML = "nedostali jste zadny gol";
+                }
+                else if (random == 1) {
+                  popUp.innerHTML = `dostali jste ${random} gól`;
+                }
+                else if (random >= 2 && random <= 4) {
+                  popUp.innerHTML = `dostali jste ${random} góly`;
+                }
+                else if (random >= 5) {
+                  popUp.innerHTML = `dostali jste ${random} gólů`;
+                }
+                constPInterval = setTimeout(() => {
+          popUp.style.display = "none";
+        }, 1000);
       countGoals = countGoals + random;
       counter2.innerHTML = countGoals;
       counter1.innerHTML = count;
@@ -59,6 +82,22 @@ cookie.onclick = () => {
     if (players1Up == 1) {
       let random = Math.floor(Math.random(0) * 5);
       count = 0;
+      popUp.style.display = "block";
+        if (random == 0) {
+                    popUp.innerHTML = "nedostali jste zadny gol";
+                }
+                else if (random == 1) {
+                  popUp.innerHTML = `dostali jste ${random} gól`;
+                }
+                else if (random >= 2 && random <= 4) {
+                  popUp.innerHTML = `dostali jste ${random} góly`;
+                }
+                else if (random >= 5) {
+                  popUp.innerHTML = `dostali jste ${random} gólů`;
+                }
+                constPInterval = setTimeout(() => {
+          popUp.style.display = "none";
+        }, 1000);
       countGoals = countGoals + random;
       counter2.innerHTML = countGoals;
       counter1.innerHTML = count;
@@ -66,6 +105,22 @@ cookie.onclick = () => {
     if (players1Up == 2) {
       let random = Math.floor(Math.random(0) * 7);
       count = 0;
+      popUp.style.display = "block";
+        if (random == 0) {
+                    popUp.innerHTML = "nedostali jste zadny gol";
+                }
+                else if (random == 1) {
+                  popUp.innerHTML = `dostali jste ${random} gól`;
+                }
+                else if (random >= 2 && random <= 4) {
+                  popUp.innerHTML = `dostali jste ${random} góly`;
+                }
+                else if (random >= 5) {
+                  popUp.innerHTML = `dostali jste ${random} gólů`;
+                }
+                constPInterval = setTimeout(() => {
+          popUp.style.display = "none";
+        }, 1000);
       countGoals = countGoals + random;
       counter2.innerHTML = countGoals;
       counter1.innerHTML = count;
@@ -73,6 +128,22 @@ cookie.onclick = () => {
     if (players1Up == 3) {
       let random = Math.floor(Math.random() * (10-1) + 1);
       count = 0;
+      popUp.style.display = "block";
+        if (random == 0) {
+                    popUp.innerHTML = "nedostali jste zadny gol";
+                }
+                else if (random == 1) {
+                  popUp.innerHTML = `dostali jste ${random} gól`;
+                }
+                else if (random >= 2 && random <= 4) {
+                  popUp.innerHTML = `dostali jste ${random} góly`;
+                }
+                else if (random >= 5) {
+                  popUp.innerHTML = `dostali jste ${random} gólů`;
+                }
+                constPInterval = setTimeout(() => {
+          popUp.style.display = "none";
+        }, 1000);
       countGoals = countGoals + random;
       counter2.innerHTML = countGoals;
       counter1.innerHTML = count;
@@ -80,6 +151,22 @@ cookie.onclick = () => {
     if (players1Up == 4) {
       let random = Math.floor(Math.random() * (21-3) + 3);
       count = 0;
+      popUp.style.display = "block";
+        if (random == 0) {
+                    popUp.innerHTML = "nedostali jste zadny gol";
+                }
+                else if (random == 1) {
+                  popUp.innerHTML = `dostali jste ${random} gól`;
+                }
+                else if (random >= 2 && random <= 4) {
+                  popUp.innerHTML = `dostali jste ${random} góly`;
+                }
+                else if (random >= 5) {
+                  popUp.innerHTML = `dostali jste ${random} golů`;
+                }
+                constPInterval = setTimeout(() => {
+          popUp.style.display = "none";
+        }, 1000);
       countGoals = countGoals + random;
       counter2.innerHTML = countGoals;
       counter1.innerHTML = count;
