@@ -1,15 +1,20 @@
 let players1Up = parseInt(localStorage.getItem("players1Up")) || 0;
 let playersEquip1Up = parseInt(localStorage.getItem("playersEquip1Up")) || 0;
-let countGoals = parseInt(localStorage.getItem("countGoals"));
+let playersTutorial1Up = parseInt(localStorage.getItem("playersTutorial1Up")) || 0;
+let countGoals = parseInt(localStorage.getItem("countGoals")) | 0;
 
 localStorage.setItem("players1Up", players1Up);
 localStorage.setItem("playersEquip1Up", playersEquip1Up);
 localStorage.setItem("countGoals", countGoals);
+localStorage.setItem("playersTutorial1Up", playersTutorial1Up);
 
 const player1 = document.getElementById("player1");
 const player2 = document.getElementById("player2");
 const player3 = document.getElementById("player3");
 const player4 = document.getElementById("player4");
+
+const tut1 = document.getElementById("tut1");
+const tutP1 = document.getElementById("tutP1");
 
 goals.innerHTML = `Góly : ${countGoals}`;
 
@@ -154,4 +159,17 @@ window.onload = () => {
     if (players1Up == 4) {
         player4.style.display = "none";
     }
+    if (playersTutorial1Up >= 2) {
+        tut1.style.display = "none";
+    }
+}
+tut1.onclick = () => {
+    playersTutorial1Up++;
+    if (playersTutorial1Up == 1) {
+        tutP1.innerHTML = "Vypadá to, že už jsi připravenej vyhrávat... <br> Děkuju ti, že hraješ mojí hru! "
+    }
+    if (playersTutorial1Up == 2) {
+        tut1.style.display = "none";
+    }
+    localStorage.setItem("playersTutorial1Up", playersTutorial1Up);
 }
