@@ -4,6 +4,7 @@ let countGoals = parseInt(localStorage.getItem("countGoals")) || 0;
 let countGoalsUp = parseInt(localStorage.getItem("countGoalsUp")) || 0;
 let players1Up = parseInt(localStorage.getItem("players1Up")) || 0;
 let tutorial1Up = parseInt(localStorage.getItem("tutorial1Up")) || 0;
+let tutorial2Up = parseInt(localStorage.getItem("tutorial2Up")) || 0;
 let boots1Up = parseInt(localStorage.getItem("boots1Up"));
 
 
@@ -12,6 +13,7 @@ localStorage.setItem("countGoals", countGoals);
 localStorage.setItem("countGoalsUp", countGoalsUp);
 localStorage.setItem("players1Up", players1Up);
 localStorage.setItem("tutorial1Up", tutorial1Up);
+localStorage.setItem("tutorial2Up", tutorial2Up);
 localStorage.setItem("boots1Up", boots1Up);
 
 const cookie = document.getElementById("cookie");
@@ -26,8 +28,14 @@ const table1Container = document.getElementById("table1Container");
 const table2Container = document.getElementById("table2Container");
 const popUp = document.getElementById("popUp");
 const tut1 = document.getElementById("tut1");
+const tut2 = document.getElementById("tut1");
 const tutP1 = document.getElementById("tutP1");
+const tutP2 = document.getElementById("tutP1");
 const backArrow = document.getElementById("backArrow");
+
+let audioSiuu = new Audio("./res/audio/siuu.mp3");
+let audioOof = new Audio("./res/audio/oof.mp3")
+let audioHonzicek = new Audio("./res/audio/Honzicek.mp3")
 
 counter1.innerHTML = count
 counter2.innerHTML = countGoals
@@ -61,10 +69,15 @@ cookie.onclick = () => {
     if (countGoals >= 3) {
       countGoalsUp = 1;
       if (countGoalsUp == 1) {
-        tut1.style.display = "block"
-        tutP1.innerHTML = "Skvěle. Vypadá to, že máš na svoje první boty. No, vlastně, boty... <br> klikni na šipku v levém horním rohu, běž do obchodu a kup si je"
-        tut1.onclick = () => {
-          tut1.style.display = "none";
+        tut2.style.display = "block"
+        tutP2.innerHTML = "Skvěle. Vypadá to, že máš na svoje první boty. No, vlastně, boty... <br> klikni na šipku v levém horním rohu, běž do obchodu a kup si je"
+        tut2.onclick = () => {
+          tut2.style.display = "none";
+          tutorial2Up++;
+          localStorage.setItem("tutorial2Up", tutorial2Up);
+        }
+        if (tutorial2Up >= 1) {
+            tut2.style.display = "none";
         }
       }
       localStorage.setItem("countGoalsUp", countGoalsUp);
@@ -72,6 +85,12 @@ cookie.onclick = () => {
     if (players1Up == 0) {
       let random = Math.floor(Math.random(0) * 3);
       count = 0;
+      if (random == 0) {
+        audioOof.play();
+      }
+      else if (random >= 1) {
+        audioSiuu.play();
+      }
       // if (random == 0) {
       //   popUp.style.display = "block";
       //   constPInterval = setTimeout(() => {
@@ -101,6 +120,12 @@ cookie.onclick = () => {
     if (players1Up == 1) {
       let random = Math.floor(Math.random(0) * 5);
       count = 0;
+      if (random == 0) {
+        audioOof.play();
+      }
+      else if (random >= 1) {
+        audioSiuu.play();
+      }
       popUp.style.display = "block";
         if (random == 0) {
                     popUp.innerHTML = "nedal jsi zadny gol";
@@ -170,6 +195,9 @@ cookie.onclick = () => {
     if (players1Up == 4) {
       let random = Math.floor(Math.random() * (21-3) + 3);
       count = 0;
+      if (random >= 1) {
+        audioHonzicek.play();
+      }
       popUp.style.display = "block";
         if (random == 0) {
                     popUp.innerHTML = "nedal jsi zadny gol";
