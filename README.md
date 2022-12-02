@@ -1,2 +1,2 @@
 # clickerGame
-[click me](https://honzajemocdobrej.github.io/clickerGame/)
+[PLAY!](https://honzajemocdobrej.github.io/clickerGame/)
