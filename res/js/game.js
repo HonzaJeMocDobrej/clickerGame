@@ -149,6 +149,12 @@ cookie.onclick = () => {
     if (players1Up == 2) {
       let random = Math.floor(Math.random(0) * 7);
       count = 0;
+      if (random == 0) {
+        audioOof.play();
+      }
+      else if (random >= 1) {
+        audioSiuu.play();
+      }
       popUp.style.display = "block";
         if (random == 0) {
                     popUp.innerHTML = "nedal jsi zadny gol";
@@ -172,6 +178,12 @@ cookie.onclick = () => {
     if (players1Up == 3) {
       let random = Math.floor(Math.random() * (10-1) + 1);
       count = 0;
+      if (random == 0) {
+        audioOof.play();
+      }
+      else if (random >= 1) {
+        audioSiuu.play();
+      }
       popUp.style.display = "block";
         if (random == 0) {
                     popUp.innerHTML = "nedal jsi zadny gol";
